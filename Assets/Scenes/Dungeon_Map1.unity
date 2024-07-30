@@ -207,7 +207,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1309256813}
-  m_Father: {fileID: 2007739197}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &161133684
 MonoBehaviour:
@@ -221,7 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d7f8e9d4e3a8fb4eb6a29879ef84ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Walk_Speed: 5
+  movelimiter: 0.07
+  Walk_Speed: 2
 --- !u!50 &161133685
 Rigidbody2D:
   serializedVersion: 4
@@ -236,7 +237,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -5194,7 +5195,7 @@ CompositeCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 1
+  m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7587,7 +7588,6 @@ Transform:
   m_Children:
   - {fileID: 1179650699}
   - {fileID: 266544649}
-  - {fileID: 161133682}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &2007739199
@@ -7632,4 +7632,5 @@ Tilemap:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 161133682}
   - {fileID: 2007739197}

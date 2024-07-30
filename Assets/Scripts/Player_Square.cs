@@ -8,7 +8,7 @@ public class Player_Square : MonoBehaviour
 
     float horizontal;
     float vertical;
-    float movelimiter = 0.7f;
+    public float movelimiter = 0.7f;
 
     public float Walk_Speed = 5.0f;
 
