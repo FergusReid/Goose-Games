@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class abilities : MonoBehaviour
@@ -23,9 +24,21 @@ public class abilities : MonoBehaviour
             GameObject fireball = Instantiate(projectile, transform.position, transform.rotation);
             
             fireball.SetActive(true);
-            fireball.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.up);
+            fireball.GetComponent<Rigidbody2D>().velocity = Vector2.up * 5;
+            Destroy( fireball, 5F );
+            //CullRoutine(fireball);
 
         }
     }
+
+    //private IEnumerator CullRoutine(GameObject obj)
+    //{
+    //    yield return new WaitForSeconds(5);
+    //    obj.SetActive(false);
+    //    Destroy(obj);
+    //
+    //}
+    
+
 }
 
