@@ -5374,6 +5374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 928053455}
+  mouseAim: 1
 --- !u!1 &928053455
 GameObject:
   m_ObjectHideFlags: 0

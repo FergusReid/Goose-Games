@@ -7,6 +7,7 @@ public class abilities : MonoBehaviour
 {
 
     public GameObject projectile;
+    public bool mouseAim = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,25 +20,28 @@ public class abilities : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            Debug.Log("fireball");
+            
 
             GameObject fireball = Instantiate(projectile, transform.position, transform.rotation);
+
+            Vector2 aimDir = Vector2.left;
+
+            if (mouseAim)
+            {
+                Vector3 temp = Input.mousePosition;
+                Vector2 mousePos = new Vector2(temp.x - Screen.width/2, temp.y - Screen.height/2);
+                Vector2 playerPos = transform.position;
+                aimDir = mousePos - playerPos;
+                Debug.Log("fireball" + Screen.width + "   " + mousePos.ToString());
+            }
             
             fireball.SetActive(true);
-            fireball.GetComponent<Rigidbody2D>().velocity = Vector2.up * 5;
+            fireball.GetComponent<Rigidbody2D>().velocity = aimDir.normalized * 5;
             Destroy( fireball, 5F );
-            //CullRoutine(fireball);
+            
 
         }
     }
-
-    //private IEnumerator CullRoutine(GameObject obj)
-    //{
-    //    yield return new WaitForSeconds(5);
-    //    obj.SetActive(false);
-    //    Destroy(obj);
-    //
-    //}
     
 
 }
