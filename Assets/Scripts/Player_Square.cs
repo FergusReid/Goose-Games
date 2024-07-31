@@ -4,37 +4,35 @@ using UnityEngine;
 
 public class Player_Square : MonoBehaviour
 {
-    Rigidbody2D body;
+    public float moveSpeed = 5f;
 
-    float horizontal;
-    float vertical;
-    public float movelimiter = 0.7f;
+    public Rigidbody2D rb;
+    public Animator animator;
 
-    public float Walk_Speed = 5.0f;
+    Vector2 movement;  
 
-  
-    // Start is called before the first frame update
-    void Start()
-    {
-        body = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        
+     //The Input is automatically assigned to WASD or Arrow Keys 
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        if (horizontal != 0 && vertical != 0)
-        {
-            horizontal *= movelimiter;
-            vertical *= movelimiter;
-        }
+       
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+
+        
     }
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(horizontal * Walk_Speed, vertical * Walk_Speed);
+    //calculates diagonal movement
+       rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
+       
+    //rotation speed
+       rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
     }
 
 }

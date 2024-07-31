@@ -5208,7 +5208,6 @@ GameObject:
   - component: {fileID: 440613838}
   - component: {fileID: 440613842}
   - component: {fileID: 440613843}
-  - component: {fileID: 440613845}
   - component: {fileID: 440613846}
   m_Layer: 0
   m_Name: Player
@@ -5245,8 +5244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d7f8e9d4e3a8fb4eb6a29879ef84ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movelimiter: 0.7
-  Walk_Speed: 5
+  moveSpeed: 5
+  rb: {fileID: 440613842}
+  animator: {fileID: 440613846}
 --- !u!212 &440613839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5361,19 +5361,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.02, y: -0.12}
   m_Size: {x: 0.54, y: 1.8}
   m_Direction: 0
---- !u!114 &440613845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440613836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82a4903f15bc5e64e8dae7a0303159f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
 --- !u!95 &440613846
 Animator:
   serializedVersion: 5
