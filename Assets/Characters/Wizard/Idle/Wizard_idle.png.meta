@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e67eb0e89fdc97742ad93208ca675b82
+guid: b3516c0d71ed6c049b195149599fb4b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,91 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gnome-Walk_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8abe01b166cbc645a57daa1c7219ebd
-      internalID: -219306513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gnome-Walk_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ec261275d312984ead935ba522aa6bf
-      internalID: 1434498321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gnome-Walk_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6adbf6c3b72c1f488e5274a72895884
-      internalID: -2097336333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gnome-Walk_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a1a3d65d811b9146988550cf2471af1
-      internalID: -1914066837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gnome-Walk_4
+      name: Wizard_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a86f87d4dee1c247b4d7a34ec5c4647
-      internalID: -2018385275
+      spriteID: 49bcbd2b90c2112438c0c007616d074c
+      internalID: 1135644980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gnome-Walk_5
+      name: Wizard_idle_1
       rect:
         serializedVersion: 2
         x: 64
@@ -216,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2088b17ba4c09fb4fa3dd7b198a2aba7
-      internalID: 877205178
+      spriteID: 4473573a9981c3d40abadf6bcb9680e3
+      internalID: -1918511575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gnome-Walk_6
+      name: Wizard_idle_2
       rect:
         serializedVersion: 2
         x: 128
@@ -237,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb52635b2f8065342aa0dd653f9df87c
-      internalID: 1373584989
+      spriteID: b64ffa80184671e448f4a7982106ede8
+      internalID: -1568372744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gnome-Walk_7
+      name: Wizard_idle_3
       rect:
         serializedVersion: 2
         x: 192
@@ -258,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21e9f9432ee640345aa52bf3a56325e4
-      internalID: 21870771
+      spriteID: 86cab74fbebcacd43bc72e97b8889b3a
+      internalID: 382593391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gnome-Walk_8
+      name: Wizard_idle_4
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9b54bc331c94da4c9498b40cb890df7
-      internalID: -957193220
+      spriteID: 67fc26feaf8684b49aa8ae1376ecdbe8
+      internalID: 2113521182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gnome-Walk_9
+      name: Wizard_idle_5
       rect:
         serializedVersion: 2
         x: 64
@@ -300,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: debbc5c9a3e63f84cb7f718637a0650f
-      internalID: 1709618908
+      spriteID: baf7e00e64c8c2742b4aacd63d54ffa5
+      internalID: -1916118936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gnome-Walk_10
+      name: Wizard_idle_6
       rect:
         serializedVersion: 2
         x: 128
@@ -321,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ce9bbf18d54af4448af6a08a594c141
-      internalID: 1493163464
+      spriteID: dc8f9a117d3cfd044883b3d75bbd3fcc
+      internalID: -1290120561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gnome-Walk_11
+      name: Wizard_idle_7
       rect:
         serializedVersion: 2
         x: 192
@@ -342,8 +258,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed661a0665b10043a0a53c8fc396ba9
-      internalID: -2097439168
+      spriteID: 96dae513db1ac9d46810e216f90fc933
+      internalID: -886519319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_idle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eea87b3ffe056f4cb5429f8138a385c
+      internalID: 344190748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_idle_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a7d18af41ae0648b5db5cf3491b5a6
+      internalID: -1364945998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard_idle_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487161c0e9543664394d6cb7bb89e29b
+      internalID: -1433158202
       vertices: []
       indices: 
       edges: []
@@ -359,18 +338,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gnome-Walk_0: -219306513
-      Gnome-Walk_1: 1434498321
-      Gnome-Walk_10: 1493163464
-      Gnome-Walk_11: -2097439168
-      Gnome-Walk_2: -2097336333
-      Gnome-Walk_3: -1914066837
-      Gnome-Walk_4: -2018385275
-      Gnome-Walk_5: 877205178
-      Gnome-Walk_6: 1373584989
-      Gnome-Walk_7: 21870771
-      Gnome-Walk_8: -957193220
-      Gnome-Walk_9: 1709618908
+      Wizard_idle_0: 1135644980
+      Wizard_idle_1: -1918511575
+      Wizard_idle_10: -1433158202
+      Wizard_idle_2: -1568372744
+      Wizard_idle_3: 382593391
+      Wizard_idle_4: 2113521182
+      Wizard_idle_5: -1916118936
+      Wizard_idle_6: -1290120561
+      Wizard_idle_7: -886519319
+      Wizard_idle_8: 344190748
+      Wizard_idle_9: -1364945998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
